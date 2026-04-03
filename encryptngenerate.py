@@ -28,7 +28,7 @@ class User:
         return hashlib.sha256(plain_password.encode()).hexdigest()
     
     def userInfo(self):
-        return f"\nID : {self.id}\nNomor HP : {self.telpNumber}\nPassword : {self.password} \n"
+        return f"\nID : {self.id}\nNomor HP : {self.telpNumber}\nPassword : {self.password}"
 
 user = User()
 
