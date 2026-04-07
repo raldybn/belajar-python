@@ -1,0 +1,8 @@
+perbedaan hash dengan hashlib
+
+Hash dan hashlib adalah dua istilah yang sering digunakan dalam konteks kriptografi dan pemrograman. 
+Hash adalah algoritma yang digunakan untuk mengubah data menjadi bentuk yang unik dan tidak dapat dipindahkan,
+yang sering digunakan dalam verifikasi integritas data. Sementara itu, 
+hashlib adalah modul dalam bahasa pemrograman Python yang menyediakan implementasi umum untuk berbagai 
+algoritma hash dan digest. Modul ini memungkinkan pengguna untuk menghitung hash digest untuk data mereka, 
+baik itu kata sandi, berkas, atau artefak digital lainnya.

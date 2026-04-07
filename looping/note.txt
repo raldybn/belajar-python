@@ -1,0 +1,78 @@
+
+1. For Loop
+for loop digunakan untuk mengulang (iterasi) elemen-elemen dari sekuens seperti list, tuple, string, 
+atau range.
+Struktur dasar:
+Pythonfor variabel in iterable:
+    # blok kode yang akan dijalankan
+
+Contoh:
+Python# Mengulang angka dari 0 sampai 4
+for i in range(5):
+    print(i)
+
+# Mengulang setiap huruf dalam string
+for huruf in "Python":
+    print(huruf)
+
+Keterangan:
+
+range(5) menghasilkan angka 0, 1, 2, 3, 4.
+iterable bisa berupa list, tuple, string, atau objek lain yang bisa diiterasi.
+
+
+2. While Loop
+while loop digunakan untuk mengulang selama kondisi bernilai True.
+Struktur dasar:
+Pythonwhile kondisi:
+    # blok kode yang akan dijalankan
+
+Contoh:
+Python# Mengulang selama nilai kurang dari 5
+x = 0
+while x < 5:
+    print(x)
+    x += 1  # penting untuk mengubah nilai agar loop berhenti
+
+Keterangan:
+
+Jika kondisi tidak pernah menjadi False, loop akan berjalan tanpa henti (infinite loop).
+Pastikan ada perubahan variabel di dalam loop agar tidak macet.
+
+
+3. Perbedaan Utama
+
+
+
+Aspek
+For Loop
+While Loop
+
+
+
+
+Kapan digunakan
+Saat jumlah iterasi sudah diketahui atau ingin mengulang elemen koleksi
+Saat jumlah iterasi belum pasti dan bergantung pada kondisi
+
+
+Sumber data
+Mengambil dari iterable (list, string, range, dll.)
+Berdasarkan kondisi boolean
+
+
+Resiko infinite loop
+Kecil (karena iterasi terbatas)
+Lebih besar jika kondisi tidak diubah
+
+
+
+
+4. Contoh Kombinasi
+Python# Menggunakan for di dalam while
+count = 0
+while count < 3:
+    for i in range(2):
+        print(f"count={count}, i={i}")
+    count += 1
+
